@@ -3,11 +3,10 @@
 #
 # check_varnishbackends.py
 # Varnish Backend Checker for Icinga/Nagios
-#
 
 # Author
 #  - Scott Mcintyre <me@scott.cm>
-#
+#  - http://scott.cm
 # Usage
 #  -h, --help            	Show help message and exit
 #  -H HOST, --host=HOST  	The ip varnishadm is listening on (Default: 127.0.0.1)
