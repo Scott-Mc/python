@@ -5,7 +5,8 @@
 #
 
 # Author
-#  - Scott Mcintyre <scott@scottmcintyre.net>
+#  - Scott Mcintyre <me@scott.cm>
+#  - http://scott.cm
 #
 # Usage
 #
