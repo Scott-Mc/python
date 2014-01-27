@@ -22,7 +22,7 @@ api = twitter.Api(consumer_key='#####', consumer_secret='#####', access_token_ke
 
 start = time.time()
 i = 0
-friends=api.GetFriends()
+friends=api.GetFriendIDs()
 
 while (1):
  try:
