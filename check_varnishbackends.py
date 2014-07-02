@@ -15,6 +15,16 @@
 #  -p PATH, --path=PATH  	The path to the varnishadm binary (Default: /usr/bin/varnishadm
 # Example: ./check_varnishbackends.py -H 127.0.0.1 -P 6082 -S /etc/varnish/secret -p /usr/bin/varnishadm
 # 
+# If you are getting no backends detected ensure you have .probe configured
+# Example:
+# .probe = {
+#	 .url = "/";
+# 	.interval = 5s;
+#	.timeout = 5s;
+#	.window = 5;
+# 	.threshold = 3;
+# }
+# See https://www.varnish-cache.org/trac/wiki/BackendPolling
 
 import sys
 import optparse
@@ -55,7 +65,7 @@ def main(argv):
     sys.exit(2)
 
   if not backends_sick and not backends_healthy:
-    print "No backends found"
+    print "No backends detected.  If this is an error, see readme."
     sys.exit(1)
 
   print "All %s backends are healthy" % (len(backends_healthy))
