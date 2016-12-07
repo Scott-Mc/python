@@ -29,7 +29,7 @@ while (1):
   for u in friends:
    print "Deleting %s" % (u.name)
    api.DestroyFriendship(u.id);
-   i = i + 1
+   i += 1
    
  except:
    print "Possibly Rate limited? sleeping 60 seconds"
